@@ -34,8 +34,6 @@ export default async function handler(
 
   const { intervals } = timeIntervalsBodySchema.parse(req.body)
 
-  console.log(intervals)
-
   try {
     await Promise.all(
       intervals?.map((interval) => {
