@@ -67,7 +67,5 @@ export default async function handler(
 
   const blockedDates = blockedDatesRaw.map((item) => item.date)
 
-  console.log(blockedDates)
-
   return res.json({ blockedWeekDays, blockedDates })
 }
